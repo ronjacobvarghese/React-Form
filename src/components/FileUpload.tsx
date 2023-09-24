@@ -8,11 +8,14 @@ type FileUploadContent = {
   handleFileChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 };
 const FileUpload = ({ fileContent, handleFileChange }: FileUploadContent) => {
+  // isloading required while uploading a file
   const [isLoading, setIsLoading] = useState(false);
+
+  // here the loading state is considered as a side effect of the file content changing hence useEffect is required.
 
   useEffect(() => {
     if (fileContent) setIsLoading(true);
-
+    // temporarity setting a timer
     setTimeout(() => {
       setIsLoading(false);
     }, 3000);

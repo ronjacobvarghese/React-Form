@@ -8,6 +8,9 @@ function App() {
   const [submit, setSubmit] = useState(false);
   const [fileContent, setFileContent] = useState<string | null>(null);
 
+  // the following functions adds these functionalities:
+  // it file is json reads the data and sets the file content;
+  // else sends error for any non-json files;
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const selectedFile = event.target.files?.[0];
 
@@ -26,6 +29,8 @@ function App() {
       }
     }
   };
+
+  // function for form validation as well as submission
 
   const onSubmitHandler = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
