@@ -1,27 +1,18 @@
-# React + TypeScript + Vite
+### Get Started
+Follow these steps:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. Clone the repository: `git clone https://github.com/your-username/React-Form.git`
 
-Currently, two official plugins are available:
+2. Navigate to the project directory: `cd React-Form`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+3. Install dependencies: `npm install`
 
-## Expanding the ESLint configuration
+4. Run the server: `npm run dev`
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+5. Launch the app in your browser: `http://localhost:5173`(default)
 
-- Configure the top-level `parserOptions` property like this:
+6. Set Mobile Breakpoint: Iphone XR
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+### Technologies Used
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- **Typescript, React Js, Tailwind CSS**
